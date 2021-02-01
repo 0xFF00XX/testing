@@ -1,0 +1,486 @@
+
+*{
+  box-sizing: border-box;
+}
+
+
+.chooseBarContainer{
+  width: 20%;
+  height:100%;
+  background-color: #4c4436;
+  position: fixed;
+}
+.menuChooseBar{
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  position: fixed;
+  overflow: auto;
+  width:15vw;
+  min-height: 500px;
+  min-width: 250px;
+  height:80%;
+  padding: 0 0 30px 0;
+  border: 2px black;
+  border-style: dashed none dashed solid;
+  margin-top: 5vh;
+  margin-left: 2%;
+  /* background-color: #A28F9D; */
+}
+.menuChooseBar::-webkit-scrollbar{
+  width: 10px;
+  background-color: #74776B;
+}
+.menuChooseBar::-webkit-scrollbar-thumb{
+  background-color:#A28F9D;
+}
+
+
+.dishSection{
+  display: inline-block;
+  display: flex;
+  /* position: absolute; */
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+  margin: 0 auto;
+  width: 80%;
+  height: 20%;
+  background-color: #3F0D12;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+.dish_icon{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.5s;
+  /* display: none; */
+}
+.brief_description{
+
+  height: fit-content;
+  position: absolute;
+  font-size: 40px;
+  /* bottom:-0px; */
+}
+.dishSection:hover  .dish_icon{
+    transform:  translateY(-32%);
+}
+
+
+
+/* MENU OF THE RIGHT */
+.individualOrders_and_footer{
+  width: 80%;
+  right:0;
+  height:90%;
+  overflow-y: hidden;
+
+  overflow-x: hidden;
+  position:fixed;
+
+}
+
+/* ROW OF ORDERS */
+.singleOrderRow{
+  width: 90%;
+  max-width: 2000px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom:50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SINGLE ORDER WITH IMAGE AND DESCRIPTION */
+.order{
+  width: 30%;
+}
+.order_Image{
+  overflow: hidden;
+}
+.order_Image>img{
+  max-height: 250px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 1s;
+  width:100%;
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+}
+.order:hover .order_Image>img{
+  transform: scale(1.3);
+  transform-origin: 50% 50%;
+}
+.order_description{
+  cursor: default;
+}
+.order_description>p{
+  margin: 5px 5px 0 0;
+  text-align:right;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* PRICE BORDER ANIMATION */
+.price{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  width:100px;
+  height: 50px;
+  position: absolute;
+  /* background-color: #E7ECEF; */
+  background-color: #F0F3BD;
+	transition: font-size 0.25s;
+	border: 0;
+	box-sizing: border-box;
+	box-shadow: inset 0 0 0 2px #02C39A;
+	box-sizing: border-box;
+}
+.price::before{
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+.price::after{
+	 box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+	border: 2px solid transparent;
+	width: 0;
+	height: 0;
+	bottom: 0;
+	right: 0;
+}
+.price:hover{
+  font-size: 120%;
+}
+.price:hover::before {
+	border-top-color: #05668D;
+	border-right-color: #05668D;
+	transition:
+	width 0.15s ease-out,
+	height 0.15s ease-out 0.15s;
+	width: 100%;
+	height: 100%;
+}
+.price:hover::after {
+ border-bottom-color: #05668D;
+ border-left-color: #05668D;
+ transition:
+ border-color 0s ease-out,
+ width 0.15s ease-out,
+ height 0.15s ease-out 0.15s;
+ width: 100%;
+ height: 100%;
+ }
+
+/* ORDER ROW WITHOUT FOOTER */
+/* or actually with. It wont work differently so oops */
+.individualOrders_section{
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  background-color: white;
+  margin-left: 5px;
+  display: none;
+  background-color:  #EDE7D9;
+}
+
+
+.individualOrders_section.firstPage{
+  display: block;
+}
+.greeting{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background: linear-gradient(135deg, rgba(76,68,54,1) 34%, rgba(132,113,79,1) 62%, rgba(227,218,139,1) 90%, rgba(249,255,227,1) 98%);
+  text-align: center;
+  color: black;
+  font-size: 100px;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  align-items: center;
+}
+/* FOOTER */
+footer{
+  width: 100%;
+  height:fit-content;
+  font-family: 'Quicksand', sans-serif;
+  border-top: 4px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+  background-color: #4c4436;
+}
+.legal{
+  color: grey;
+}
+/* I DONT NEED NAV BAR IN THE FOOTER ON THIS PAGE */
+
+.footer_follow{
+  width: 525px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.footer_follow>h4{
+  /* background-color: red; */
+  /* width: fit-content; */
+  height: fit-content;
+  text-align: center;
+  /* margin-left: -100px; */
+  /* padding-right:1000px; */
+}
+.footer_follow_links{
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: flex-end;
+}
+.footer_follow_links>a>img{
+  width: 30px;
+  margin-bottom: 25px;
+  /* bottom:30px; */
+  transition: width .25s;
+  position: absolute;
+}
+.footer_follow_links>a>img:hover{
+  width: 40px;
+}
+a[href="menu.html"]{
+  text-decoration: underline;
+}
+a[href="menu.html"]:hover{
+   text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (max-width: 1450px) {
+.menuChooseBar{
+  margin-left: 1%;
+
+}
+.greeting{
+  background: linear-gradient(135deg, rgba(76,68,54,1) 40%, rgba(132,113,79,1) 73%, rgba(227,218,139,1) 96%, rgba(249,255,227,1) 100%);
+}
+}
+@media only screen and (max-width: 1350px) {
+  .chooseBarContainer{
+    width: 0;
+    height:0;
+    background-color: #4c4436;
+    position: fixed;
+    min-height: 0;
+  }
+
+.menuChooseBar{
+  margin: 0;
+  left: 10vw;
+  padding: 0;
+  flex-direction: row;
+  overflow-x: auto;
+  width: 80vw;
+  height: 20vh;
+  min-height: 100px;
+  bottom: 0;
+  margin-bottom: 5px;
+  align-items: flex-end;
+  border-radius: 0;
+  border: 2px black;
+  border-style: none dashed none dashed;
+  background-color: transparent;
+}
+  .greeting{
+    width: 100%;
+    max-width: none;
+    height:100%;
+    line-height: 100px;
+  }
+  .greeting>span{
+    transform: rotate(-90deg);
+    font-size: 200%;
+  }
+  .dishSection{
+    width: 230px;
+    height:95%;
+    min-height: 100px;
+    margin-right: 20px;
+  }
+  .dish_icon{
+    min-height: 100px;
+  }
+  .menuChooseBar::-webkit-scrollbar{
+    height: 10px;
+    border-radius: 10px;
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #A28F9D;
+    border-radius: 10px;
+  }
+  .brief_description{
+    width: fit-content;
+  }
+
+  .individualOrders_and_footer{
+    width: 100%;
+    height: 67vh;
+    border-bottom: 2px solid black;
+
+  }
+  .individualOrders_section{
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    /* position: absolute; */
+  }
+  .firstPage{
+    height: 100%;
+    margin: 0;
+  }
+
+}
+@media only screen and (max-width: 980px){
+  .menuChooseBar::-webkit-scrollbar{
+      display: none;
+    }
+  .normalMenu{
+    display: none;
+  }
+  .logo{
+
+      margin-left: 40%;
+  }
+  #menuToggle{
+    display: flex;
+  }
+  header{
+    height: 90px;
+    margin: 0;
+    top: 0;
+    z-index: 2;
+    font-size: 2em;
+    position: sticky;
+  }
+  nav{
+    width: 100%;
+  }
+  footer{
+    /* font-size: 20px; */
+    flex-direction: column;
+    height: fit-content;
+    padding: 10px;
+  }
+  .footer_follow_links>a>img{
+    width: 70px;
+  }
+  .footer_follow_links>a>img:hover{
+    width: 70px;
+  }
+  .footer_follow{
+    margin-left: -60px;
+    width: 90%;
+    font-size: 200%;
+  }
+  .legal{
+    text-align: center;
+    margin-top: 80px;
+    order:2;
+  }
+.menuChooseBar{
+  /* height: 400px; */
+  /* min-height: 300px; */
+}
+.dishSection{
+  /* width: 50%; */
+}
+.individualOrders_and_footer{
+  /* max-height: 800px; */
+  /* z-index: -200; */
+  /* width: 100%; */
+  /* height: 78%; */
+  /* border-bottom: 2px solid black; */
+
+}
+.individualOrders_and_footer::-webkit-scrollbar{
+  display: none;
+}
+  .singleOrderRow{
+    flex-direction: column;
+    height: fit-content;
+  }
+.order_description{
+  width: 80%;
+  margin: 0 auto;
+}
+.price{
+  right: 30px;
+  margin-top: 20px;
+}
+  .order{
+    width:100%;
+    margin-bottom: 100px;
+  }
+  .order_Image>img{
+    width: 40%;
+    height: 30vw;
+    margin: 0 auto;
+  }
+  .dish_icon{
+    transform:  translateY(-32%);
+    /* height: 100px; */
+  }
+}
+/* @media screen and (max-width: 980px), (max-height: 2560px)
+{
+  .menuChooseBar{
+    height: 400px;
+  }
+  .dishSection{
+    width: 50%;
+  }
+  .individualOrders_and_footer{
+    width: 100%;
+    height: 78%;
+    border-bottom: 2px solid black;
+
+  }
+} */
+@media only screen and (max-width: 768px){
+  .greeting{
+    font-size: 300%;
+    line-height: normal;
+  }
+.order_Image>img{
+  height: 40vw;
+  width: 60%;
+  /* width: 90%; */
+}
+
+
+
+}

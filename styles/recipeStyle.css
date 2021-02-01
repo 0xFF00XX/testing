@@ -1,0 +1,241 @@
+*
+{
+	box-sizing: border-box;
+}
+hr{
+	color: black;
+}
+main
+{
+	background: linear-gradient(45deg, rgba(76,68,54,1) 26%, rgba(102,89,66,1) 50%, rgba(132,113,79,1) 63%, rgba(170,159,127,1) 78%, rgba(249,255,227,1) 100%);
+	margin: 0 auto;
+	overflow: hidden;
+	width: 100%;
+}
+.heading_inspiration
+{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2vw;
+	margin: 0;
+	text-align: center;
+}
+.recipies>h2
+{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	text-align: center;
+}
+.recipeSingleRow
+{
+	display: flex;
+	height: 400px;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	width: 90%;
+}
+.recipeInstruction
+{
+	background-color: black;
+	background-image: url(../images/recipesIMG/recipeCoffee.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 20px;
+	color: black;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	justify-content: center;
+	overflow: hidden;
+	transition: width 0.5s,
+ height 0.2s;
+	width: 20%;
+}
+.instruction_Content
+{
+	display: flex;
+}
+.instruction_Content>p
+{
+	background-color: rgba(237, 231, 217, 0.6);
+	border: 2px dashed black;
+	border-style: dashed;
+	cursor: default;
+	display: none;
+	flex-direction: column;
+	font-family: 'Baloo Thambi 2', cursive;
+	margin: 0 20px;
+	text-indent: 30px;
+	user-select: none;
+}
+.instruction_Heading>h2
+{
+	background-color: rgba(237, 231, 217, 0.8);
+	border-radius: 10px;
+	cursor: default;
+	font-family: 'Quicksand', sans-serif;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+	user-select: none;
+	width: fit-content;
+}
+footer
+{
+	align-items: center;
+	border-top: 4px solid black;
+	display: flex;
+	font-family: 'Quicksand', sans-serif;
+	justify-content: space-between;
+	padding: 0 100px;
+}
+.legal
+{
+	color: grey;
+}
+.footer_nav>a
+{
+	color: grey;
+	padding: 5px 0;
+	text-decoration: none;
+	transition: color .1s;
+}
+.footer_nav>a:hover
+{
+	color: darkgrey;
+}
+.footer_nav>h3
+{
+	color: white;
+	margin: 0;
+	margin-top: 5px;
+	padding: 0;
+}
+.footer_nav
+{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.footer_follow
+{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 525px;
+}
+.footer_follow_links
+{
+	align-items: flex-end;
+	display: flex;
+	justify-content: space-around;
+}
+.footer_follow_links>a>img
+{
+	position: absolute;
+	transition: width .25s;
+	width: 30px;
+}
+.footer_follow_links>a>img:hover
+{
+	width: 40px;
+}
+a[href="recipes.html"]
+{
+	text-decoration: underline;
+}
+a[href="recipes.html"]:hover
+{
+	text-decoration: none;
+}
+@media only screen and (max-width: 980px)
+{
+	.normalMenu
+	{
+		display: none;
+	}
+	.logo
+	{
+		margin-left: 40%;
+	}
+	#menuToggle
+	{
+		display: flex;
+	}
+	header
+	{
+		font-size: 2em;
+		height: 90px;
+		margin: 0;
+		position: sticky;
+		top: 0;
+		z-index: 2;
+	}
+	.heading_inspiration
+	{
+		font-size: 20px;
+	}
+	.recipeSingleRow
+	{
+		align-items: center;
+		display: flex;
+		flex-flow: column wrap;
+		flex-wrap: wrap;
+		height: fit-content;
+		overflow: auto;
+	}
+	nav
+	{
+		width: 100%;
+	}
+	.recipeInstruction
+	{
+		background-position: center;
+		height: 600px;
+		margin-bottom: 50px;
+		width: 100%;
+	}
+	.instruction_Content
+	{
+		flex-wrap: wrap;
+	}
+	.instruction_Content>p
+	{
+		display: block;
+		margin-top: 10px;
+		overflow: auto;
+	}
+	.footer_nav
+	{
+		display: none;
+	}
+	footer
+	{
+		flex-direction: column;
+		height: fit-content;
+		padding: 10px;
+	}
+	.footer_follow_links>a>img
+	{
+		width: 70px;
+	}
+	.footer_follow_links>a>img:hover
+	{
+		width: 70px;
+	}
+	.footer_follow
+	{
+		font-size: 200%;
+		margin-left: -60px;
+		width: 90%;
+	}
+	.legal
+	{
+		margin-top: 80px;
+		order: 2;
+		text-align: center;
+	}
+}
