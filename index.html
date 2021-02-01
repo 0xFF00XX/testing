@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="styles/mainStyle.css">
+    <link rel="stylesheet" href="styles/indexStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="goUp" onclick="goTop()">^</div>
+    <header>
+      <div class="logo" onclick="window.location.href='index.html'">café mûr</div>
+      <nav>
+        <div id="menuToggle" onclick="clicker()">
+                <input id="box" type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+            <ul id="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="recipes.html">Our Recipes</a></li>
+              <li><a href="merch.html">Merch</a></li>
+            </ul>
+        </div>
+        <div class="normalMenu">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="recipes.html">Our Recipes</a>
+          <a href="merch.html">Merch</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="Hero">
+        <div class="hero_content">
+          <div class="hero_text">
+            <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          </div>
+          <a href="#Hero2" id="smoothScrollAbout">
+            <div class="hero_button">
+              About Us
+            </div>
+          </a>
+          <a href="#contact_us" id="smoothScrollContact"><div class="hero_button2">
+            Contact Us
+          </div></a>
+
+        </div>
+      </section>
+      <section id="Hero2">
+        <div class="about_us">
+          <div class="about_us_text">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div id="contact_us">
+          <div class="contact_us_text">
+            <h2>Contact Us</h2>
+            <div class="contacts">
+              <h3>Phone</h3><p>+8 495 009 4444</p>
+            </div>
+            <div class="contacts">
+              <h3>Location</h3><p>Dame St <br> Temple Bar <br>Dublin 2 <br> D02 XY77</p>
+            </div>
+            <div class="contacts">
+              <h3>Opening Hours</h3>
+              <p>Monday To Friday  7:15 – 21:00 <br>Saturday & Sunday  9:15 – 18:00 </p>
+            </div>
+            <div class="contacts">
+              <h3>Bookings</h3><p>We do not take bookings for either Saturday or Sunday, and also special occasions/holiday times. For all other times please email <br><br> bestEmail@gmail.com </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="legal">
+        <p> Copyright (c) 2020 Copyright Holder All Rights Reserved.</p>
+      </div>
+      <div class="footer_nav">
+        <h3>Navigation</h3>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="recipes.html">Our Recipes</a>
+        <a href="merch.html">Merch</a>
+      </div>
+      <div class="footer_follow">
+        <h4>Follow Us</h4>
+        <div class="footer_follow_links">
+          <a href="https://twitter.com/dubdrinkscoffee"><img src="images/SM/twitter.png" alt="twitter_Icon"></a>
+          <a href="https://www.facebook.com/pages/category/Cafe/Dublin-Cafe-309391365374/"><img src="images/SM/facebook-logo.png" alt="facebook_Icon"></a>
+          <a href="https://www.instagram.com/unioncafedublin/"><img src="images/SM/instagram-logo.png" alt="instagram_Icon"></a>
+          <a href="https://www.youtube.com/channel/UCzMCviViKNMEBvoeOFtSPIA"><img src="images/SM/youtube.png" alt="youtube_Icon"></a>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+        if(performance.navigation.type == 1){
+          location.href = window.location.href.substr(0, window.location.href.indexOf('#'));
+        }
+        function clicker()
+        {
+          if (event.target.tagName != 'INPUT') document.getElementById('box').checked = !document.getElementById('box').checked;
+        }
+//Listener to hide/show "go up" button if certain amount of pixels scrolled
+        goUpId = document.getElementById("goUp");
+        var ScrollFunc = function() {
+          var y = window.scrollY;
+          if (y >= 200) {
+            goUpId.style.display = "block";
+          } else {
+            goUpId.style.display = "none"
+          }
+        };
+        window.addEventListener("scroll", ScrollFunc);
+////source - STACK OVERFLOW
+        function goTop() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+  </body>
+</html>
