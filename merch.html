@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Merch</title>
+    <link rel="stylesheet" href="styles/mainStyle.css">
+    <link rel="stylesheet" href="styles/merchStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <div class="logo" onclick="window.location.href='index.html'">café mûr</div>
+      <nav>
+        <div id="menuToggle" onclick="clicker()">
+                <input id="box" type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+            <ul id="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="recipes.html">Our Recipes</a></li>
+              <li><a href="merch.html">Merch</a></li>
+            </ul>
+        </div>
+        <div class="normalMenu">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="recipes.html">Our Recipes</a>
+          <a href="merch.html">Merch</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="heading">
+        <h1>to order our fascinating merchandise, please complete the form below</h1>
+      </div>
+      <div class="img_form">
+        <div class="merchPicture">
+          <img src="images/merch/choco.png" alt="cap_picture">
+        </div>
+
+        <div class="form">
+          <h2>Yes, this form</h2>
+          <form action="merchAction.php" method="post">
+            <div class="namesInput">
+
+              <fieldset>
+                <input placeholder="First name" name="fname" type="text" tabindex="1" maxlength="20" pattern="[a-zA-z]{1,}" title="Only letters. Maximum of 20 characters!" required>
+              </fieldset>
+
+              <fieldset>
+                <input placeholder="Last name" name="lname" type="text" tabindex="2" maxlength="20" pattern="[a-zA-z]{1,}" title="Only letters. Maximum of 20 characters!" required>
+              </fieldset>
+            </div>
+            <div class="contactsInput">
+              <fieldset>
+                <!-- <label for="tel">Phone (10-digits):</label> -->
+                <input placeholder="Phone Number" id="tel" name="tel" type="tel" pattern="[0-9]{5,}" title="Only digits! e.g. 12345678. Minimum 5 digidts!" tabindex="3"  required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Email Address"id="email" type="email" name="mail"  tabindex="4" maxlength="50" required>
+              </fieldset>
+            </div>
+            <br>
+            <div class="addressInput">
+              <fieldset>
+                <input placeholder="Address line 1"  name="addr1" type="text" maxlength="50" tabindex="5" pattern="[a-zA-z0-9\-]{1,}" title="Characters allowed: a-z, A-Z, 0-9, - , . , ' , '. 50 characters max!" required>
+              </fieldset>
+              <fieldset>
+                <input placeholder="Address line 2"  name="addr2" type="text" maxlength="50" tabindex="6" pattern="[a-zA-z0-9\-]{1,}" title="Characters allowed: a-z, A-Z, 0-9, - , . , ' , '. 50 characters max!" required>
+              </fieldset>
+            </div>
+            <fieldset>
+              <label for="quantity">How many?: </label>
+              <input name="quantity" type="number" min="1" max="100" tabindex="6" value="1"  required>
+            </fieldset>
+            <div class="submit_reset">
+              <input type="submit" value="Submit" id="submit">
+              <input type="reset" value="Reset" id="reset">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="video_intro_heading">
+        <h1>and this how you are going to look in it!</h1>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/QggJzZdIYPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+    </main>
+    <footer>
+      <div class="legal">
+        <p> Copyright (c) 2020 Copyright Holder All Rights Reserved.</p>
+      </div>
+      <div class="footer_nav">
+        <h3>Navigation</h3>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="recipes.html">Our Recipes</a>
+        <a href="merch.html">Merch</a>
+      </div>
+      <div class="footer_follow">
+        <h4>Follow Us</h4>
+        <div class="footer_follow_links">
+          <a href="https://twitter.com/dubdrinkscoffee"><img src="images/SM/twitter.png" alt="twitter_Icon"></a>
+          <a href="https://www.facebook.com/pages/category/Cafe/Dublin-Cafe-309391365374/"><img src="images/SM/facebook-logo.png" alt="facebook_Icon"></a>
+          <a href="https://www.instagram.com/unioncafedublin/"><img src="images/SM/instagram-logo.png" alt="instagram_Icon"></a>
+          <a href="https://www.youtube.com/channel/UCzMCviViKNMEBvoeOFtSPIA"><img src="images/SM/youtube.png" alt="youtube_Icon"></a>
+        </div>
+      </div>
+    </footer>
+
+
+    <script type="text/javascript">
+        if(performance.navigation.type == 1){
+          location.href = window.location.href.substr(0, window.location.href.indexOf('#'));
+        }
+        function clicker()
+        {
+          if (event.target.tagName != 'INPUT') document.getElementById('box').checked = !document.getElementById('box').checked;
+        }
+    </script>
+  </body>
+
+</html>

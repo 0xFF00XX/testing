@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles/mainStyle.css">
+    <link rel="stylesheet" href="styles/menuStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/menu_pricelist_toggle.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <div class="logo" onclick="window.location.href='index.html'">café mûr</div>
+      <nav>
+        <div id="menuToggle" onclick="clicker()">
+                <input id="box" type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+            <ul id="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="recipes.html">Our Recipes</a></li>
+              <li><a href="merch.html">Merch</a></li>
+            </ul>
+        </div>
+
+        <div class="normalMenu">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="recipes.html">Our Recipes</a>
+          <a href="merch.html">Merch</a>
+        </div>
+
+      </nav>
+    </header>
+    <main>
+      <div class="chooseBarContainer">
+
+        <!-- EVERY NAVIGATION BAR ITEM ON THE LEFT -->
+        <div class="menuChooseBar">
+          <div class="dishSection tea" onclick="changeTabs(this)">
+            <div class="brief_description">TEA</div>
+            <img class="dish_icon" src="images/dishesIMG/tea.jpg" alt="tea_picture">
+          </div>
+          <div class="dishSection milkshake" onclick="changeTabs(this)">
+            <div class="brief_description">SHAKES</div>
+            <img class="dish_icon" src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+          </div>
+          <div class="dishSection coffee" onclick="changeTabs(this)">
+            <div class="brief_description">COFFEE</div>
+            <img class="dish_icon" src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+          </div>
+          <div class="dishSection pancakes" onclick="changeTabs(this)">
+            <div class="brief_description">PANCAKES</div>
+            <img class="dish_icon" src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+          </div>
+          <div class="dishSection burgers" onclick="changeTabs(this)">
+              <div class="brief_description">BURGERS</div>
+            <img class="dish_icon" src="images/dishesIMG/burger.jpg" alt="burger_picture">
+          </div>
+
+          <div class="dishSection pizza" onclick="changeTabs(this)">
+            <div class="brief_description">PIZZA</div>
+            <img class="dish_icon" src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+          </div>
+
+          <div class="dishSection cola" onclick="changeTabs(this)">
+            <div class="brief_description">COLD</div>
+            <img class="dish_icon" src="images/dishesIMG/cola.jpg" alt="cola_picture">
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="individualOrders_and_footer">
+
+        <div class="individualOrders_section firstPage">
+          <div class="greeting">
+              <span>←</span>&nbsp;Pick a dish from our menu!
+          </div>
+        </div>
+
+        <div class="individualOrders_section teaTab">
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/tea.jpg" alt="tea_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="legal">
+              <p> Copyright (c) 2020 Copyright Holder All Rights Reserved.</p>
+            </div>
+            <div class="footer_follow">
+              <h4>Follow Us</h4>
+              <div class="footer_follow_links">
+                <a href="https://twitter.com/dubdrinkscoffee"><img src="images/SM/twitter.png" alt="twitter_Icon"></a>
+                <a href="https://www.facebook.com/pages/category/Cafe/Dublin-Cafe-309391365374/"><img src="images/SM/facebook-logo.png" alt="facebook_Icon"></a>
+                <a href="https://www.instagram.com/unioncafedublin/"><img src="images/SM/instagram-logo.png" alt="instagram_Icon"></a>
+                <a href="https://www.youtube.com/channel/UCzMCviViKNMEBvoeOFtSPIA"><img src="images/SM/youtube.png" alt="youtube_Icon"></a>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+        <div class="individualOrders_section milkshakeTab">
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/milkhsakes.jpg" alt="milkhsakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="legal">
+              <p> Copyright (c) 2020 Copyright Holder All Rights Reserved.</p>
+            </div>
+            <div class="footer_follow">
+              <h4>Follow Us</h4>
+              <div class="footer_follow_links">
+                <a href="https://twitter.com/dubdrinkscoffee"><img src="images/SM/twitter.png" alt="twitter_Icon"></a>
+                <a href="https://www.facebook.com/pages/category/Cafe/Dublin-Cafe-309391365374/"><img src="images/SM/facebook-logo.png" alt="facebook_Icon"></a>
+                <a href="https://www.instagram.com/unioncafedublin/"><img src="images/SM/instagram-logo.png" alt="instagram_Icon"></a>
+                <a href="https://www.youtube.com/channel/UCzMCviViKNMEBvoeOFtSPIA"><img src="images/SM/youtube.png" alt="youtube_Icon"></a>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+        <div class="individualOrders_section coffeeTab">
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/coffee.jpg" alt="coffee_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="legal">
+              <p> Copyright (c) 2020 Copyright Holder All Rights Reserved.</p>
+            </div>
+            <div class="footer_follow">
+              <h4>Follow Us</h4>
+              <div class="footer_follow_links">
+                <a href="https://twitter.com/dubdrinkscoffee"><img src="images/SM/twitter.png" alt="twitter_Icon"></a>
+                <a href="https://www.facebook.com/pages/category/Cafe/Dublin-Cafe-309391365374/"><img src="images/SM/facebook-logo.png" alt="facebook_Icon"></a>
+                <a href="https://www.instagram.com/unioncafedublin/"><img src="images/SM/instagram-logo.png" alt="instagram_Icon"></a>
+                <a href="https://www.youtube.com/channel/UCzMCviViKNMEBvoeOFtSPIA"><img src="images/SM/youtube.png" alt="youtube_Icon"></a>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+        <div class="individualOrders_section pancakesTab">
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pancakes.jpg" alt="pancakes_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="legal">
+              <p> Copyright (c) 2020 Copyright Holder All Rights Reserved.</p>
+            </div>
+            <div class="footer_follow">
+              <h4>Follow Us</h4>
+              <div class="footer_follow_links">
+                <a href="https://twitter.com/dubdrinkscoffee"><img src="images/SM/twitter.png" alt="twitter_Icon"></a>
+                <a href="https://www.facebook.com/pages/category/Cafe/Dublin-Cafe-309391365374/"><img src="images/SM/facebook-logo.png" alt="facebook_Icon"></a>
+                <a href="https://www.instagram.com/unioncafedublin/"><img src="images/SM/instagram-logo.png" alt="instagram_Icon"></a>
+                <a href="https://www.youtube.com/channel/UCzMCviViKNMEBvoeOFtSPIA"><img src="images/SM/youtube.png" alt="youtube_Icon"></a>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+        <div class="individualOrders_section burgersTab">
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/burger.jpg" alt="burger_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="legal">
+              <p> Copyright (c) 2020 Copyright Holder All Rights Reserved.</p>
+            </div>
+            <div class="footer_follow">
+              <h4>Follow Us</h4>
+              <div class="footer_follow_links">
+                <a href="https://twitter.com/dubdrinkscoffee"><img src="images/SM/twitter.png" alt="twitter_Icon"></a>
+                <a href="https://www.facebook.com/pages/category/Cafe/Dublin-Cafe-309391365374/"><img src="images/SM/facebook-logo.png" alt="facebook_Icon"></a>
+                <a href="https://www.instagram.com/unioncafedublin/"><img src="images/SM/instagram-logo.png" alt="instagram_Icon"></a>
+                <a href="https://www.youtube.com/channel/UCzMCviViKNMEBvoeOFtSPIA"><img src="images/SM/youtube.png" alt="youtube_Icon"></a>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+        <div class="individualOrders_section pizzaTab">
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/pizza.jpg" alt="pizza_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="legal">
+              <p> Copyright (c) 2020 Copyright Holder All Rights Reserved.</p>
+            </div>
+            <div class="footer_follow">
+              <h4>Follow Us</h4>
+              <div class="footer_follow_links">
+                <a href="https://twitter.com/dubdrinkscoffee"><img src="images/SM/twitter.png" alt="twitter_Icon"></a>
+                <a href="https://www.facebook.com/pages/category/Cafe/Dublin-Cafe-309391365374/"><img src="images/SM/facebook-logo.png" alt="facebook_Icon"></a>
+                <a href="https://www.instagram.com/unioncafedublin/"><img src="images/SM/instagram-logo.png" alt="instagram_Icon"></a>
+                <a href="https://www.youtube.com/channel/UCzMCviViKNMEBvoeOFtSPIA"><img src="images/SM/youtube.png" alt="youtube_Icon"></a>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+
+        <div class="individualOrders_section colaTab">
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <div class="singleOrderRow">
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+            <div class="order">
+              <div class="order_Image">
+                    <img src="images/dishesIMG/cola.jpg" alt="cola_picture">
+              </div>
+              <div class="order_description">
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. </p>
+              </div>
+              <div class="price">
+                100 €
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="legal">
+              <p> Copyright (c) 2020 Copyright Holder All Rights Reserved.</p>
+            </div>
+            <div class="footer_follow">
+              <h4>Follow Us</h4>
+              <div class="footer_follow_links">
+                <a href="https://twitter.com/dubdrinkscoffee"><img src="images/SM/twitter.png" alt="twitter_Icon"></a>
+                <a href="https://www.facebook.com/pages/category/Cafe/Dublin-Cafe-309391365374/"><img src="images/SM/facebook-logo.png" alt="facebook_Icon"></a>
+                <a href="https://www.instagram.com/unioncafedublin/"><img src="images/SM/instagram-logo.png" alt="instagram_Icon"></a>
+                <a href="https://www.youtube.com/channel/UCzMCviViKNMEBvoeOFtSPIA"><img src="images/SM/youtube.png" alt="youtube_Icon"></a>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+
+      </div>
+    </main>
+  </body>
+</html>

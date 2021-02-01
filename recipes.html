@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="styles/mainStyle.css">
+    <link rel="stylesheet" href="styles/recipeStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/recipe_xpand_toggle.js"></script>
+  </head>
+  <body>
+    <div id="goUp" onclick="goTop()">^</div>
+    <header>
+      <div class="logo" onclick="window.location.href='index.html'">café mûr</div>
+      <nav>
+        <div id="menuToggle" onclick="clicker()">
+                <input id="box" type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+            <ul id="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="recipes.html">Our Recipes</a></li>
+              <li><a href="merch.html">Merch</a></li>
+            </ul>
+        </div>
+        <div class="normalMenu">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="recipes.html">Our Recipes</a>
+          <a href="merch.html">Merch</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="heading_inspiration">
+        <h1>Learn to cook with Us!</h1>
+      </div>
+      <hr color="black">
+      <section class="recipies">
+        <h2>Simple cooking</h2>
+        <div class="recipeSingleRow">
+          <div class="recipeInstruction" onclick="xPand(this)">
+
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 1</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+
+          <div class="recipeInstruction"onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 2</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+          <div class="recipeInstruction"onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 3</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+          <div class="recipeInstruction"onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 4</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+        </div>
+        <h2>intermediate cooking</h2>
+        <div class="recipeSingleRow">
+          <div class="recipeInstruction"onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 4</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+          <div class="recipeInstruction" onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 4</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+          <div class="recipeInstruction"onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 5</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+          <div class="recipeInstruction"onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 6</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+        </div>
+        <h2>Advanced cooking</h2>
+        <div class="recipeSingleRow">
+          <div class="recipeInstruction"onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 4</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+          <div class="recipeInstruction" onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 7</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+          <div class="recipeInstruction"onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 8</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+          <div class="recipeInstruction"onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 9</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+        </div>
+        <h2>Super Advanced Ultra Luxury cooking!</h2>
+        <div class="recipeSingleRow">
+          <div class="recipeInstruction"onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 4</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+          <div class="recipeInstruction" onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 10</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+          <div class="recipeInstruction"onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 11</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+          <div class="recipeInstruction"onclick="xPand(this)">
+            <div class="instruction_Heading">
+                <h2>Lorem Ipsum 12</h2>
+            </div>
+            <div class="instruction_Content">
+              <p><span>Step 1:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 2:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 3:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 4:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 5:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+              <p><span>Step 6:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer>
+      <div class="legal">
+        <p> Copyright (c) 2020 Copyright Holder All Rights Reserved.</p>
+      </div>
+      <div class="footer_nav">
+        <h3>Navigation</h3>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="recipes.html">Our Recipes</a>
+        <a href="merch.html" target="_blank">Merch</a>
+      </div>
+      <div class="footer_follow">
+        <h4>Follow Us</h4>
+        <div class="footer_follow_links">
+          <a href="https://twitter.com/dubdrinkscoffee"><img src="images/SM/twitter.png" alt="twitter_Icon"></a>
+          <a href="https://www.facebook.com/pages/category/Cafe/Dublin-Cafe-309391365374/"><img src="images/SM/facebook-logo.png" alt="facebook_Icon"></a>
+          <a href="https://www.instagram.com/unioncafedublin/"><img src="images/SM/instagram-logo.png" alt="instagram_Icon"></a>
+          <a href="https://www.youtube.com/channel/UCzMCviViKNMEBvoeOFtSPIA"><img src="images/SM/youtube.png" alt="youtube_Icon"></a>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript">
+
+    goUpId = document.getElementById("goUp");
+    var ScrollFunc = function() {
+      var y = window.scrollY;
+      if (y >= 200) {
+        goUpId.style.display = "block";
+      } else {
+        goUpId.style.display = "none"
+      }
+    };
+    window.addEventListener("scroll", ScrollFunc);
+
+
+    function goTop() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+    </body>
+  </html>
